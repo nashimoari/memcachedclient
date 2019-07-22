@@ -1,4 +1,12 @@
-Задание:
+## About
+
+memcached client 
+
+[![Build Status](https://travis-ci.org/squizlabs/PHP_CodeSniffer.svg?branch=phpcs-fixer)](https://travis-ci.org/squizlabs/PHP_CodeSniffer) 
+
+
+
+## Задание:
 
 Необходимо реализовать библиотеку-клиент к Memcached. Библиотека должна на низком уровне реализовывать команды get/set/delete и уметь работать в синхронном и асинхронном режиме.
 
