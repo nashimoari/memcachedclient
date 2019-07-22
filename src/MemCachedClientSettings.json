@@ -1,0 +1,45 @@
+{
+  "timeOut": "1",
+  "waitFor": [
+    {
+      "val": "ERROR\r\n",
+      "code": "FAILURE",
+      "detail": "client sent a nonexistent command name."
+    },
+    {
+      "val": "CLIENT_ERROR",
+      "code": "FAILURE",
+      "detail": "some sort of client error in the input line, i.e. the input  doesn't conform to the protocol in some way. Answer contains a human-readable error string."
+    },
+    {
+      "val": "SERVER_ERROR",
+      "code": "FAILURE",
+      "detail": "some sort of server error prevents the server from carrying out the command. Answer contains a human-readable error string. In cases of severe server errors, which make it impossible to continue serving the client (this shouldn't normally happen), the server will close the connection after sending the error line. This is the only case in which the server closes a connection to a client."
+    },
+    {
+      "val": "DELETED\r\n",
+      "code": "SUCCESS",
+      "detail": "key was deleted"
+    },
+    {
+      "val": "STORED\r\n",
+      "code": "SUCCESS",
+      "detail": "success"
+    },
+    {
+      "val": "EXISTS\r\n",
+      "code": "SUCCESS",
+      "detail": "exists"
+    },
+    {
+      "val": "NOT_FOUND\r\n",
+      "code": "SUCCESS",
+      "detail": "not found"
+    },
+    {
+      "val": "END\r\n",
+      "code": "SUCCESS",
+      "detail": "success"
+    }
+  ]
+}

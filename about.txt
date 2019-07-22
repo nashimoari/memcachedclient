@@ -1,0 +1,36 @@
+Задание:
+Необходимо реализовать библиотеку-клиент к Memcached. Библиотека должна на низком уровне реализовывать команды get/set/delete и уметь работать в синхронном и асинхронном режиме.
+При реализации необходимо использовать подход Test Driven Development.
+Чтобы понять, как работает клиент, можно сделать вот такую telnet сессию, - она проиллюстрирует типичное общение клиента с сервером::
+
+$ telnet localhost 11211
+get key
+END
+set key 0 3600 3
+xyz
+STORED
+get key
+VALUE key 0 3
+xyz
+END
+
+Для автоматизации проверок нужно прикрутить Travis CI и проверку кода на соотвествие стандартам PSR-2.
+Также тебе пригодится документация: https://github.com/memcached/memcached/blob/master/doc/protocol.txt
+
+------------------------------------------
+
+Изученный материал по TDD:
+
+https://www.youtube.com/watch?v=O9W-p3wZDIM
+https://habr.com/ru/company/ruvds/blog/450316/
+https://habr.com/ru/post/130086/
+https://habr.com/ru/post/329418/
+https://habr.com/ru/post/169381/
+https://phpunit.readthedocs.io/ru/latest/writing-tests-for-phpunit.html
+https://habr.com/ru/post/70046/
+
+
+Автоматическая проверка на соответствие PSR-2:
+
+https://robjmills.co.uk/2018/01/14/automatic-psr2-coding-standard.html
+https://ashleyhindle.com/how-i-used-gitlab-ci-to-stick-to-psr-2/
